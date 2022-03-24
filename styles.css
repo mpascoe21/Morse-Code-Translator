@@ -1,0 +1,48 @@
+* {
+  font-family: Montserrat, Helvetica, sans-serif;
+  color: #3a3a3a;
+}
+
+.header {
+  color: #1613ca;
+  margin: 10px;
+}
+
+.translatorContainer {
+  text-align: center;
+  width: 500px;
+}
+.translatorContainer textarea {
+  font-size: 12px;
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.labelContainer h3 {
+  width: 150px;
+}
+.labelContainer .switchBtn {
+  width: 40px;
+  height: 25px;
+  align-self: center;
+}
+.labelContainer .switchBtn i {
+  color: black;
+  font-size: 20px;
+  z-index: 5;
+}
+
+#textInput {
+  border: 1px solid #bdbbbb;
+}
+
+#translation {
+  background-color: #f3f0f8;
+  border: 1px solid #bdbbbb;
+}
+
+#morseCodeAlphabet {
+  height: 250px;
+}
