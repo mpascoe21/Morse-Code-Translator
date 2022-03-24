@@ -1,0 +1,25 @@
+{
+  "name": "Morse-Code-Translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpascoe21/Morse-Code-Translator.git"
+  },
+  "keywords": [],
+  "author": "Maria Pascoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpascoe21/Morse-Code-Translator/issues"
+  },
+  "homepage": "https://github.com/mpascoe21/Morse-Code-Translator#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.7",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {}
+}
