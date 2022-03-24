@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script async defer type="module" src="./script.js"></script>
+
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">Morse Code Translator</h1>
+    </header>
+
+    <main>
+      <div class="translatorContainer">
+        <div class="labelContainer">
+          <h3 class="textInputLabel">Text Input</h3>
+          <button class="switchBtn">=></button>
+
+          <h3 class="translationLabel">Morse Code</h3>
+        </div>
+        <div>
+          <textarea
+            placeholder="...enter text"
+            id="textInput"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <textarea
+            placeholder="translation"
+            id="translation"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div>
+        <p>Instructions:</p>
+        <p>
+          Use <span style="color: rgb(228, 8, 8)">/</span> between words and
+          <span style="color: rgb(228, 8, 8)">space</span> between characters
+          when translating Morse to text.
+        </p>
+
+        <img
+          id="morseCodeAlphabet"
+          src="./morse-code.jpg"
+          alt="morse code alphabet"
+        />
+      </div>
+    </main>
+  </body>
+</html>
