@@ -1,0 +1,57 @@
+* {
+  font-family: Montserrat, Helvetica, sans-serif;
+  color: rgb(58, 58, 58);
+  
+} 
+
+.header {
+  color: rgb(22, 19, 202);
+  margin: 10px;
+}
+
+.translatorContainer {
+  text-align: center;
+  width: 500px;
+  
+  textarea {
+    font-size: 12px;
+  }
+}
+
+.labelContainer {
+  display: flex;
+  justify-content: space-between;  
+
+  h3 {
+    width: 150px;
+  }
+
+  .switchBtn {
+    width: 40px;
+    height: 25px;
+    align-self: center;
+    // border: none;
+    // background-color: transparent;   
+    i {
+      color: black;
+      font-size: 20px;
+      z-index: 5;
+    }
+  }
+}
+
+
+
+#textInput {
+  border: 1px solid rgb(189, 187, 187);
+}
+
+#translation {
+  background-color: rgb(243, 240, 248);
+  border: 1px solid rgb(189, 187, 187);
+}
+#morseCodeAlphabet {  
+  height: 250px;
+
+}
+
