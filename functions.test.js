@@ -26,6 +26,14 @@ describe("Test if Morse Code is being translated to text", () => {
     expect(translateMorseToText(".---- ----- ---..")).toBe("108");
   });
 
+  test("Should return a string of several words", () => {
+    expect(translateMorseToText(".... --- .-- / .- .-. . / -.-- --- ..-")).toBe(
+      "how are you"
+    );
+  });
+
+  // test morse to several words
+
   // NOT WORKING, THE CONDITION RUNS THE TEXT TO MORSE FUNCTION INSTEAD
   // test("invalid input", () => {
   //   expect(translateMorseToText("2 days")).toBe("invalid input");
