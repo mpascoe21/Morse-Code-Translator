@@ -17,18 +17,15 @@ const inputLabel = document.querySelector(".textInputLabel");
 const translationLabel = document.querySelector(".translationLabel");
 const switchButton = document.querySelector(".switchBtn");
 
-console.log(inputBox);
-console.log(translationBox);
-console.log(inputLabel.innerHTML);
-console.log(translationLabel.innerHTML);
-
 switchButton.addEventListener("click", () => {
   if (inputLabel.innerHTML === "Text Input") {
     inputLabel.innerHTML = "Morse Code";
     translationLabel.innerHTML = "Text Input";
+    inputBox.placeholder = "...enter Morse Code";
   } else {
     inputLabel.innerHTML = "Text Input";
     translationLabel.innerHTML = "Morse Code";
+    inputBox.placeholder = "...enter text";
   }
 });
 
