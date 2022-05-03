@@ -1,3 +1,5 @@
+//@import "./abstracts";
+
 * {
   font-family: Montserrat, Helvetica, sans-serif;
   color: rgb(58, 58, 58);
@@ -5,8 +7,16 @@
 } 
 
 .header {
-  color: rgb(22, 19, 202);
-  margin: 10px;
+  color: red;
+  //margin: 0;
+  width: 100%;
+  // text-align: center;
+  // font-size: 1.5em;
+
+  // h1 {
+  //   color: rgb(22, 19, 202);
+  //   text-align: center;
+  // }
 }
 
 .translatorContainer {
