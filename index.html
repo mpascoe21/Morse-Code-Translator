@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-
+    <script src="https://kit.fontawesome.com/8b8b0e06bb.js" crossorigin="anonymous"></script>
     <script async defer type="module" src="./script.js"></script>
-
     <title>Morse Code Translator</title>
   </head>
   <body>
@@ -16,26 +15,34 @@
     </header>
 
     <main>
-      <div class="translatorContainer">
-        <div class="labelContainer">
+      <div>
+        <!-- <div class="labelContainer">
           <h3 class="textInputLabel">Text Input</h3>
           <button class="switchBtn">=></button>
 
           <h3 class="translationLabel">Morse Code</h3>
-        </div>
-        <div>
-          <textarea
-            placeholder="...enter text"
-            id="textInput"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <textarea
-            placeholder="translation"
-            id="translation"
-            cols="30"
-            rows="10"
-          ></textarea>
+        </div> -->
+
+        <div class="translatorContainer">
+          <div class="inputContainer">
+            <h3 class="textInputLabel">Text Input</h3>
+            <textarea
+              placeholder="...enter text"
+              id="textInput"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <span class="switchBtn"><i class="fa-solid fa-right-left"></i></span>          
+          <div class="inputContainer">
+            <h3 class="translationLabel">Morse Code</h3>
+            <textarea
+              placeholder="translation"
+              id="translation"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
         </div>
       </div>
       <div>

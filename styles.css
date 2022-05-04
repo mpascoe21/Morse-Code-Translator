@@ -3,46 +3,75 @@
   color: #3a3a3a;
 }
 
+body {
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  margin: 0 20px;
+}
+
 .header {
   color: #1613ca;
-  margin: 10px;
+  text-align: center;
+  font-size: 1.6em;
 }
 
 .translatorContainer {
-  text-align: center;
-  width: 500px;
-}
-.translatorContainer textarea {
-  font-size: 12px;
-}
-
-.labelContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
 }
-.labelContainer h3 {
-  width: 150px;
+.translatorContainer .inputContainer {
+  width: 100%;
 }
-.labelContainer .switchBtn {
+.translatorContainer .inputContainer textarea {
+  font-size: 12px;
+  width: 90%;
+}
+.translatorContainer .inputContainer #textInput {
+  border: 1px solid #bdbbbb;
+}
+.translatorContainer .inputContainer #translation {
+  background-color: #f3f0f8;
+  border: 1px solid #bdbbbb;
+}
+.translatorContainer .switchBtn {
   width: 40px;
   height: 25px;
   align-self: center;
-}
-.labelContainer .switchBtn i {
-  color: black;
-  font-size: 20px;
-  z-index: 5;
-}
-
-#textInput {
-  border: 1px solid #bdbbbb;
-}
-
-#translation {
-  background-color: #f3f0f8;
-  border: 1px solid #bdbbbb;
+  margin-top: 20px;
 }
 
 #morseCodeAlphabet {
   height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin: 0 40px;
+  }
+
+  .header {
+    font-size: 3em;
+  }
+
+  .translatorContainer {
+    flex-direction: row;
+    align-content: space-between;
+  }
+  .translatorContainer .inputContainer {
+    width: 45%;
+  }
+  .translatorContainer .inputContainer textarea {
+    width: 90%;
+    font-size: 12px;
+  }
+  .translatorContainer .switchBtn {
+    width: 50px;
+    height: 25px;
+    align-self: flex-start;
+    margin: 22px 10px;
+  }
 }

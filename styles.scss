@@ -1,67 +1,86 @@
-//@import "./abstracts";
-
 * {
   font-family: Montserrat, Helvetica, sans-serif;
-  color: rgb(58, 58, 58);
-  
+  color: rgb(58, 58, 58);  
 } 
 
-.header {
-  color: red;
-  //margin: 0;
+body {
+  margin: 0;
   width: 100%;
-  // text-align: center;
-  // font-size: 1.5em;
+}
 
-  // h1 {
-  //   color: rgb(22, 19, 202);
-  //   text-align: center;
-  // }
+main {
+  margin: 0 20px;
+}
+
+.header {
+  color: rgb(22, 19, 202);
+  text-align: center;
+  font-size: 1.6em;
 }
 
 .translatorContainer {
-  text-align: center;
-  width: 500px;
-  
-  textarea {
-    font-size: 12px;
-  }
-}
-
-.labelContainer {
   display: flex;
-  justify-content: space-between;  
+  flex-direction: column;
+  text-align: center;
 
-  h3 {
-    width: 150px;
+  .inputContainer {
+    width: 100%;
+
+    textarea {
+      font-size: 12px;
+      width: 90%;
+    }
+
+    #textInput {
+      border: 1px solid rgb(189, 187, 187);
+    }
+    
+    #translation {
+      background-color: rgb(243, 240, 248);
+      border: 1px solid rgb(189, 187, 187);
+    }
   }
 
   .switchBtn {
     width: 40px;
     height: 25px;
     align-self: center;
-    // border: none;
-    // background-color: transparent;   
-    i {
-      color: black;
-      font-size: 20px;
-      z-index: 5;
-    }
+    margin-top: 20px;
   }
 }
 
-
-
-#textInput {
-  border: 1px solid rgb(189, 187, 187);
-}
-
-#translation {
-  background-color: rgb(243, 240, 248);
-  border: 1px solid rgb(189, 187, 187);
-}
 #morseCodeAlphabet {  
   height: 250px;
+}
 
+@media screen and (min-width: 768px) {
+
+  main {
+    margin: 0 40px;
+  }
+  .header {
+    font-size: 3em;    
+  }
+
+  .translatorContainer {    
+    flex-direction: row;
+    align-content: space-between;
+
+    .inputContainer {
+      width: 45%;
+
+      textarea {
+        width: 90%;
+        font-size: 12px;
+      }
+    }
+
+    .switchBtn {
+      width: 50px;
+      height: 25px;
+      align-self: flex-start;
+      margin: 22px 10px;
+    }
+  }
 }
 
